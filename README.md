@@ -1,6 +1,6 @@
 # Deskglow
 
-A beautiful, glowing **now-playing screen for Spotify** that runs in any browser. Built for a phone or tablet on your desk (landscape), but works anywhere.
+A beautiful, glowing **now-playing screen** that runs in any browser. **Today it works with Spotify only**; support for other music platforms is planned (see [Roadmap](#roadmap)). Built for a phone or tablet on your desk (landscape), but works anywhere.
 
 *Português: [role para baixo](#português).*
 
@@ -44,6 +44,15 @@ Everything runs in your browser. Your Client ID and Spotify tokens are stored in
 - Add `?reset=1` to the address to forget the Client ID and sign out.
 - Add `?lang=en` or `?lang=pt` to force a language.
 
+## Supported platforms and roadmap
+
+| Platform | Status |
+| --- | --- |
+| Spotify | Supported today |
+| Other music platforms (for example Apple Music, YouTube Music, Deezer) | Planned, nothing is promised or started yet |
+
+Deskglow is built around Spotify's Web API for now. The plan is to keep the same look and add more sources over time. Ideas and pull requests for new platforms are welcome.
+
 ## Contributing
 
 Issues and pull requests are welcome. The whole app lives in `index.html`; translations are in the `I18N` object near the top of the script — adding a language is one more block.
@@ -56,7 +65,7 @@ Issues and pull requests are welcome. The whole app lives in `index.html`; trans
 
 # Português
 
-**Deskglow** é uma tela "tocando agora" do Spotify, bonita e com brilho, que roda em qualquer navegador. Feita para um celular ou tablet na mesa (deitado), mas funciona em qualquer lugar.
+**Deskglow** é uma tela "tocando agora", bonita e com brilho, que roda em qualquer navegador. **Por enquanto funciona apenas com o Spotify**; no futuro a ideia é conectar outras plataformas de música (veja o [Roadmap](#roadmap-1)). Feita para um celular ou tablet na mesa (deitado), mas funciona em qualquer lugar.
 
 **Recursos:** layout estilo StandBy com capa grande (**deslize a capa** para trocar de música), fundo desfocado com as cores da capa, barra de tempo com tempo restante, botões (letra / anterior / play-pause / próxima / fila), volume e o aparelho que está tocando, **letra sincronizada** (LRCLIB), fila clicável, tela sempre ligada, inglês e português automáticos. É **um único arquivo HTML**, sem servidor.
 
@@ -78,5 +87,12 @@ Issues and pull requests are welcome. The whole app lives in `index.html`; trans
 - Vídeos **Canvas** não existem na API pública; usamos a capa desfocada.
 - **Privacidade:** tudo roda no seu navegador; Client ID e tokens ficam só no seu aparelho. Sem rastreamento.
 - `?reset=1` no endereço apaga o Client ID e desconecta; `?lang=pt` força português.
+
+## Plataformas e roadmap
+
+- **Spotify:** funciona hoje.
+- **Outras plataformas** (por exemplo Apple Music, YouTube Music, Deezer): planejado para o futuro. Ainda não foi iniciado e não há data.
+
+O Deskglow usa a API Web do Spotify. A ideia é manter o mesmo visual e adicionar mais fontes com o tempo. Sugestões e pull requests são bem-vindos.
 
 Licença: [MIT](LICENSE).
